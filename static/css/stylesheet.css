@@ -15,11 +15,15 @@
 }
 .account{
     text-align: center;
-    padding: 25%;
+    padding-top: 300px;
 }
 .box{
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 2em 15em;
     font-weight: bold;
+    text-align: center;
     border: solid 3px #000000;
+}
+.sendbutton{
+    text-align: center;
 }
