@@ -2,22 +2,29 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>サンプル</title>
+    <title>ホーム</title>
     <link rel="stylesheet" href="static/css/stylesheet.css">
 </head>
-<body>
-    <div class="container">
 
+<body>
+
+    <!--container：アプリ画面全体-->
+    <div class="container">
+        <!--info：右上の自分の情報のカタマリ-->
         <div class="info">
 
+            <!--icon：自分のアイコン-->
             <div class="icon">
                 <img src="static/img/human1.png" width="100px" height="100px">
             </div>
 
+            <!--text：自分の名前と口座番号のカタマリ-->
             <div class="text">
+                <!--name：自分の名前-->
                 <div class="name">
                     <p>サンプル 氏名</p>
                 </div>
+                <!--number：自分の口座番号-->
                 <div class="number">
                     <p>0000000</p>
                 </div>
@@ -25,20 +32,22 @@
 
         </div>
 
+        <!--account：自分の預金残高表示欄のカタマリ-->
         <div class="account">
             預金残高
+            <!--box：自分の預金残高の値を四角で囲むためのカタマリ-->
             <div class="box">
                 300000
             </div>
         </div>
 
+        <!--sendbutton：送金ボタン-->
         <div class="sendbutton">
+            <!--「送金する＞」という文字を表示し、押したら「/send」に移動-->
             <a href="/send">送金する＞</a>
         </div>
         
     </div>
-    
-
 
 </body>
 </html>
