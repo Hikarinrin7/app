@@ -27,3 +27,14 @@
 .sendbutton{
     text-align: center;
 }
+
+.people-list{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.person{
+    margin: 40px;
+    float: left;
+    width: 15%;
+}
