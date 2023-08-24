@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>送金金額入力画面</title>
+    <link rel="stylesheet" href="static/css/stylesheet2.css">
+</head>
+<body>
+    <!--container：アプリ画面全体-->
+    <div class="container">
+        <div class="info">
+
+            <!--icon：自分のアイコン-->
+            <div class="icon">
+                <img src="static/img/human1.png" width="100px" height="100px">
+            </div>
+            <!--text：自分の名前と口座番号のカタマリ-->
+            <div class="text">
+                <div class="name">
+                    <p>サンプル 氏名</p>
+                </div>
+                <div class="number">
+                    <p>0000000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-title">
+            <h1>送金金額入力画面です。</h1>
+        </div>
+
+        <!--info：-->
+        <div class="person-info">
+
+            <!--icon：-->
+            <div class="person-icon">
+                <img src="static/img/human1.png" width="120px" height="120px">
+            </div>
+
+            <!--text：-->
+            <div class="person-text">
+                <!--name：-->
+                <div class="person-name">
+                    <p>サンプル 氏名</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="limit">
+            送金上限額
+            50000円
+        </div>
+
+        <div class="send-input">
+            送金金額
+            <form method="get" action="/complete">
+                <input type="text" id="test" class="send-money" placeholder=送金金額を入力>
+                <br>
+                <a href="/complete">
+                <input type="submit" onclick="return testCheck()" value="送金する">
+                </a>
+                <p id="validate_msg" style="color: red;"></p>
+              </form>
+              <script>
+                function testCheck(){
+              var test = document.getElementById("test").value;
+              if(test > 50000){
+                var validate = "送金上限額を超えています。";
+                document.getElementById("validate_msg").innerHTML = validate; 
+                return false; 
+              }
+            }
+              </script>
+        </div>
+
+        <div class="footer">
+            フッダー
+        </div>
+    </div>
+
+</body>
+</html>

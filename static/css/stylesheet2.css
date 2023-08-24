@@ -1,0 +1,72 @@
+/*info：右上の自分の情報のカタマリ*/
+.info{
+    float: right;
+    margin: 20px;
+}
+/*icon：自分のアイコン*/
+.icon{
+    float: left;
+}
+/* text：自分の名前と口座番号のカタマリ */
+.text{
+    float:right;
+}
+
+.page-title{
+    text-align: center;
+    padding: 30px;
+}
+
+.person-info{
+    text-align: center;
+}
+
+/*icon：自分のアイコン*/
+.person-icon{
+    display: inline-block;
+    position: relative;
+}
+/* text：自分の名前と口座番号のカタマリ */
+.person-text{
+    display: inline-block;
+    position:absolute;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+.limit{
+    text-align: center;
+    margin: 30px;
+    font-size: 15px;
+}
+
+.send-input{
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.sendbutton{
+    text-align: center;
+    margin: 30px;
+}
+
+.send-money{
+    padding: 15px;
+}
+
+.complete{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.footer{
+    clear: both;
+    color: #fff;
+    background: navy;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}

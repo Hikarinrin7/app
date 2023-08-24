@@ -12,5 +12,15 @@ def index():
 def send():
     return render_template('send.html')
 
+#ルート /sendperson に来たときにsendperson.htmlを読み込む
+@app.route('/sendperson')
+def sendperson():
+    return render_template('sendperson.html')
+
+#ルート /sendperson に来たときにsendperson.htmlを読み込む
+@app.route('/complete')
+def complete():
+    return render_template('complete.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

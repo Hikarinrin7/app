@@ -12,12 +12,17 @@
     float:right;
 }
 
+.page-title{
+    text-align: center;
+    padding: 30px;
+}
+
 /* 以下、ホーム画面（index.html）のcss */
 
 /* account：自分の預金残高表示欄 */
 .account{
     text-align: center;
-    padding-top: 300px;
+    padding-top: 150px;
 }
 /* box：自分の預金残高の値を四角で囲む */
 .box{
@@ -37,7 +42,6 @@
 /* people-list：送金相手のリストの全体 */
 .people-list{
     text-align: center;
-    padding-top: 150px;
 }
 /* person：送金相手一人一人の情報のカタマリ */
 .person{
@@ -48,4 +52,13 @@
 /* person.hover：personのカタマリにカーソルが乗った時の変化 */
 .person:hover{
     background-color: aliceblue;
+}
+
+.footer{
+    clear: both;
+    color: #fff;
+    background: navy;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
 }
